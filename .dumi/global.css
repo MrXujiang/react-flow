@@ -1,0 +1,7 @@
+.dumi-default-navbar {
+    padding-left: 60px !important;
+}
+
+.react-flow__panel.react-flow__attribution {
+    display: none !important;
+}
