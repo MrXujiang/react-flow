@@ -1,6 +1,7 @@
 import { defineConfig } from 'dumi';
 
 export default defineConfig({
+  title: 'React-Flow 中文文档',
   themeConfig: {
     name: 'React-Flow',
     favicons: [
