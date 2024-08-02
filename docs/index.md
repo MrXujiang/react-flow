@@ -23,4 +23,11 @@ features:
 ## React-Flow: 一款开箱即用的工作流开源引擎
 
 
-友情链接: [H5-Dooring零代码搭建平台](https://dooring.vip)
+友情链接: 
+
+- [H5-Dooring零代码搭建平台](https://dooring.vip)
+- [AI + 文档知识引擎](http://doc.dooring.vip)
+
+技术博客 & 技术交流:
+
+<img src="http://cdn.dooring.cn/dr/qtqd_code.png" width=180 />
