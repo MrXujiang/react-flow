@@ -1,0 +1,151 @@
+const initialNodes = [
+    {
+      id: 'node-1',
+      type: 'logo',
+      position: { x: 0, y: 0 },
+      data: { 
+        src: 'https://fast.dooring.vip/static/user/7e200e46-4976-44e4-8af9-7082871b6934/dd072c2a6fa1563c631e2a0955eced61.png' ,
+        text: 'Dooring可视化搭建平台'
+    },
+    },
+    {
+      id: 'node-2',
+      type: 'base',
+      targetPosition: 'top',
+      position: { x: 0, y: 200 },
+      data: { iconType: 'l1', text: '应用场景', id: 'node-2' },
+    },
+    {
+        id: 'node-2-1',
+        type: 'base',
+        targetPosition: 'bottom',
+        position: { x: 100, y: 300 },
+        data: { iconType: 'l3', text: '营销搭建中台', id: 'node-2-1' },
+    },
+    {
+        id: 'node-2-2',
+        type: 'base',
+        targetPosition: 'top',
+        position: { x: -100, y: 260 },
+        data: { iconType: 'l3', text: '业务搭建平台', id: 'node-2-2' },
+    },
+    {
+        id: 'node-2-3',
+        type: 'base',
+        targetPosition: 'top',
+        position: { x: 30, y: 360 },
+        data: { iconType: 'l3', text: '品宣设计平台', id: 'node-2-3' },
+    },
+    {
+        id: 'node-2-4',
+        type: 'base',
+        targetPosition: 'top',
+        position: { x: -160, y: 360 },
+        data: { iconType: 'l3', text: '电商&活动搭建平台', id: 'node-2-4' },
+    },
+    {
+      id: 'node-3',
+      type: 'base',
+      targetPosition: 'top',
+      position: { x: 200, y: 200 },
+      data: { iconType: 'l2', text: '核心模块', id: 'node-3' },
+    },
+    {
+        id: 'core',
+        type: 'output',
+        targetPosition: 'top',
+        data: { label: null },
+        position: { x: 130, y: 420 },
+        style: {
+          width: 380,
+          height: 150,
+        },
+    },
+    {
+        id: 'jump',
+        type: 'base',
+        targetPosition: 'top',
+        data: { text: '立即体验', id: 'jump', link: 'https://dooring.vip', type: 'primary' },
+        position: { x: -120, y: 520 },
+    },
+    {
+        id: 'core-1',
+        type: 'base',
+        position: { x: 20, y: 20 },
+        parentId: 'core',
+        extent: 'parent',
+        data: { type: 'primary', text: '搭建引擎', id: 'core-1', noHandle: true },
+    },
+    {
+        id: 'core-2',
+        type: 'base',
+        position: { x: 130, y: 20 },
+        parentId: 'core',
+        extent: 'parent',
+        data: { type: 'primary', text: '规则引擎', id: 'core-1', noHandle: true },
+    },
+    {
+        id: 'core-3',
+        type: 'base',
+        position: { x: 240, y: 20 },
+        parentId: 'core',
+        extent: 'parent',
+        data: { type: 'primary', text: '流程引擎', id: 'core-1', noHandle: true },
+    },
+    {
+        id: 'core-4',
+        type: 'base',
+        position: { x: 20, y: 80 },
+        parentId: 'core',
+        extent: 'parent',
+        data: { type: 'primary', text: '设计辅助', id: 'core-1', noHandle: true },
+    },
+    {
+        id: 'core-5',
+        type: 'base',
+        position: { x: 130, y: 80 },
+        parentId: 'core',
+        extent: 'parent',
+        data: { type: 'primary', text: '组件商店', id: 'core-1', noHandle: true },
+    },
+    {
+        id: 'core-6',
+        type: 'base',
+        position: { x: 240, y: 80 },
+        parentId: 'core',
+        extent: 'parent',
+        data: { type: 'primary', text: '数据源机制', id: 'core-1', noHandle: true },
+    },
+    {
+        id: 'node-4',
+        type: 'base',
+        targetPosition: 'top',
+        position: { x: 400, y: 200 },
+        data: { iconType: 'l3', text: '技术架构', id: 'node-4' },
+    },
+    {
+        id: 'node-5',
+        type: 'img',
+        targetPosition: 'top',
+        position: { x: 520, y: 300 },
+        data: { src: 'https://basic.dooring.cn/saas/user/7e200e46-4976-44e4-8af9-7082871b6934/FvK6aLnN_5S4GE2uGfqQjeoVz5Kt.png?imageView2/0/format/webp/q/75', id: 'node-5' },
+    },
+  ];
+  
+  const initialEdges = [
+    { id: 'edge-1', source: 'node-1', target: 'node-2', sourceHandle: 'a',  animated: true },
+    { id: 'edge-2', source: 'node-1', target: 'node-3', type: 'custom-edge', sourceHandle: 'b', animated: true },
+    { id: 'edge-3-1', source: 'node-3', target: 'core', type: 'custom-edge', animated: true },
+    { id: 'jump', source: 'node-2-4', target: 'jump', type: 'custom-edge' },
+    { id: 'edge-2-1', source: 'node-2', target: 'node-2-1', sourceHandle: 'node-2-btm', animated: true },
+    { id: 'edge-2-2', source: 'node-2', target: 'node-2-2', sourceHandle: 'node-2-btm', animated: true },
+    { id: 'edge-2-3', source: 'node-2', target: 'node-2-3', sourceHandle: 'node-2-btm', animated: true },
+    { id: 'edge-2-4', source: 'node-2', target: 'node-2-4', sourceHandle: 'node-2-btm', animated: true },
+    { id: 'edge-3', source: 'node-1', target: 'node-4', sourceHandle: 'b', animated: true },
+    { id: 'edge-4', source: 'node-4', target: 'node-5', sourceHandle: 'node-4-btm' },
+  ];
+  
+export {
+    initialNodes,
+    initialEdges
+}

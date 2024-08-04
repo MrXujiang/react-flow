@@ -8,20 +8,11 @@ hero:
       link: /guide
     - text: 可视化搭建平台
       link: https://dooring.vip
-features:
-  - title: ''
-    emoji: 22.9k
-    description: Github Stars
-  - title: ''
-    emoji: 670k
-    description: Weekly Installs
-  - title: ''
-    emoji: MIT
-    description: License
 ---
 
 ## React-Flow: 一款开箱即用的工作流开源引擎
 
+<code src="./guide/demo/dooring.tsx"></code>
 
 友情链接: 
 
