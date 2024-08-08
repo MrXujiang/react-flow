@@ -4,6 +4,8 @@
 
 中文文档: http://react-flow.com
 
+文档搭建引擎: http://react-flow.com/docx
+
 如果大家觉得有帮助, 欢迎点个小小的 `star`, 后续还会持续更新!
 
 ## Development
