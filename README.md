@@ -6,6 +6,10 @@
 
 文档搭建引擎: http://react-flow.com/docx
 
+开源版工作流编辑器: https://github.com/MrXujiang/flowmix-flow
+
+工作流编辑器demo: http://flowmix.turntip.cn/flow-v0
+
 如果大家觉得有帮助, 欢迎点个小小的 `star`, 后续还会持续更新!
 
 ## Development
