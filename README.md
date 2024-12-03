@@ -4,7 +4,7 @@
 
 中文文档: http://react-flow.com
 
-文档搭建引擎: http://react-flow.com/docx
+文档搭建引擎: http://flowmix.turntip.cn/docx
 
 开源版工作流编辑器: https://github.com/MrXujiang/flowmix-flow
 
